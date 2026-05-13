@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap");
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgb(12, 51, 180);
+  margin: 0;
+}
+
+section {
+  display: none;
+  padding-top: 36px;
+}
+
+section.active {
+  display: block;
+}
+
+section h2 {
+  color: #f9f9f9;
+}
+.navbar {
+  width: 100%;
+  background-color: rgb(12, 51, 180);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-left: 140px;
+  padding-right: 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1d4ed8;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar .dropdown:hover .submenu {
+  display: block;
+}
+
+.navbar .submenu li {
+  padding: 10px 20px;
+}
+
+.navbar .submenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .submenu li a:hover {
+  background-color: #2563eb;
+}
+
+
+/*dashboard*/
+.container-dashboard {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.content-dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lingkaran {
+  line-break: 40px;
+  text-align: center;
+  width: 105px;
+  height: 105px;
+  background-color: #ffffff;
+  color: #011c65;
+  border-radius: 50%;
+}
+
+.lingkaran h1 {
+  padding-top: 6px;
+}
+
+.lingkaran p {
+  margin-top: -16px;
+}
+
+.container-berita {
+  width: 500px;
+  font-family: 'poppins'; 
+  padding: 18px;
+  margin-top: 80px;
+  margin-left: 380px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.container-berita .form-group {
+  margin-bottom: 15px;
+}
+
+.container-berita input[type="text"],
+.container-berita input[type="date"],
+.container-berita textarea,
+.container-berita input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.container-berita textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.container-berita button {
+  padding: 10px 20px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 20px;
+}
+
+.container-berita button:hover {
+  background-color: #336eee;
+}
+
+.bawah {
+  display: flex;
+}
+.bawah button {
+  flex: 1;
+ 
+}
+.bawah p{
+  flex: 6;
+  font-size: 11px;
+  color: #0000004f;
+  
+}
+
+.laporan {
+  text-align: center;
+  flex: 1;
+  padding: 40px;
+  justify-content: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: #2563eb;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+table th,
+table td {
+  border: 2px solid #ececec;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  max-width: 200px; /* Batas lebar maksimal kolom */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table th {
+  background-color: white;
+  color: #2563eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+table td {
+  color: white;
+  word-wrap: break-word;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 5%;
+  text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 15%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 10%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 11%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 15%;
+  text-align: center;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 11%;
+  text-align: center;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+  width: 13%;
+  text-align: center;
+}
+
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  margin: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.terima {
+  background-color: #4ade80;
+  color: white;
+}
+
+.tolak {
+  background-color: #f87171;
+  color: white;
+}
+
+.selesai {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.container-rekap {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column; /* penting, jangan row di sini */
+  align-items: center; /* center anak-anaknya secara horizontal */
+  justify-content: center; /* center secara vertikal (jika dibutuhkan) */
+  padding: 20px;
+  max-width: 900px; /* atur lebar maksimum supaya tidak terlalu panjang */
+  margin-left: 21rem; /* inilah kunci agar container berada di tengah halaman */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* opsional, biar rapi */
+}
+
+
+#rekap {
+  margin-top: 50px;
+  
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 30vh;
+}
+
+.form-rekap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.left-rekap {
+  flex: 2; /* proporsi kiri lebih besar */
+  display: flex;
+  justify-content: center; /* center bulan di kiri */
+}
+
+.right-rekap {
+  flex: 1; /* proporsi kanan */
+  display: flex;
+  flex-direction: column; /* susun vertikal: tahun, total, submit */
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.bulan-container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.bulan-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #3A56D0;
+}
+
+.bulan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bulan-grid button {
+  padding: 10px;
+  background-color: #3A56D0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bulan-grid button.selected {
+  background-color: #ccc;
+  color: #3A56D0;
+  font-weight: bold;
+}
+
+.tahun {
+ text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.total {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-box {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3A56D0;
+  display: flex;
+  align-items: center;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.download-btn {
+  background: #3A56D0;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}

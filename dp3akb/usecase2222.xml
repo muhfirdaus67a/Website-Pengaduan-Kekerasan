@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram" id="useCase">
+    <mxGraphModel dx="1326" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Actors -->
+        <mxCell id="admin" value="&lt;&lt;Actor&gt;&gt;&#xa;Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="user" value="&lt;&lt;Actor&gt;&gt;&#xa;User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="30" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- System -->
+        <mxCell id="system" value="Website Pengaduan dan Evaluasi" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#2196f3;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="300" height="360" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases (admin) -->
+        <mxCell id="uc1" value="Mengakses Login User" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="70" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc2" value="Mengelola Laporan Pengaduan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc3" value="Mengelola Tampilan Website" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="190" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases (user) -->
+        <mxCell id="uc4" value="Memberikan Laporan Pengaduan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="250" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc5" value="Mengakses Informasi Website" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc6" value="Memberikan Penilaian Sistem" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="370" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors -->
+        <mxCell id="e1" style="endArrow=none;" edge="1" parent="1" source="admin" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=none;" edge="1" parent="1" source="admin" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=none;" edge="1" parent="1" source="admin" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=none;" edge="1" parent="1" source="user" target="uc4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=none;" edge="1" parent="1" source="user" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=none;" edge="1" parent="1" source="user" target="uc6"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

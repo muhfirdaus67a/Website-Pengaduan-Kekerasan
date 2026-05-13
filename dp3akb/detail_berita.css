@@ -1,0 +1,26 @@
+body {
+    background-color: #f7f6f6;
+    box-sizing: border-box;
+    padding: 10px;
+}
+h1 {
+    color: #014186;
+}
+
+.riwayat {
+    margin-top: -20px;
+    display: flex;
+    color: #00000084;   
+}
+
+img {
+    border-radius: 8px;
+}
+
+.isi {
+    text-align: justify;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  text-overflow: ellipsis;
+}

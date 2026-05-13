@@ -1,0 +1,47 @@
+from graphviz import Digraph
+
+# Membuat Use Case Diagram
+use_case = Digraph("UseCaseDiagram", format="png")
+use_case.attr(rankdir='LR')
+use_case.attr('node', shape='ellipse')
+
+# Aktor
+use_case.node('Admin', shape='plaintext', label='<<Actor>>\nAdmin')
+use_case.node('User', shape='plaintext', label='<<Actor>>\nUser')
+
+# Use Cases - Admin
+use_case.node('UC1', 'Mengakses Login User')
+use_case.node('UC2', 'Mengelola Laporan Pengaduan')
+use_case.node('UC3', 'Mengelola Tampilan Website')
+
+# Use Cases - User
+use_case.node('UC4', 'Memberikan Laporan Pengaduan')
+use_case.node('UC5', 'Mengakses Informasi Website')
+use_case.node('UC6', 'Memberikan Penilaian Sistem')
+
+# Sistem
+use_case.node('System', 'Website Pengaduan dan Evaluasi', shape='box')
+
+# Relasi Admin dengan Use Cases
+use_case.edge('Admin', 'UC1')
+use_case.edge('Admin', 'UC2')
+use_case.edge('Admin', 'UC3')
+
+# Relasi User dengan Use Cases
+use_case.edge('User', 'UC4')
+use_case.edge('User', 'UC5')
+use_case.edge('User', 'UC6')
+
+# Relasi Use Cases ke Sistem
+use_case.edge('UC1', 'System', style='dashed')
+use_case.edge('UC2', 'System', style='dashed')
+use_case.edge('UC3', 'System', style='dashed')
+use_case.edge('UC4', 'System', style='dashed')
+use_case.edge('UC5', 'System', style='dashed')
+use_case.edge('UC6', 'System', style='dashed')
+
+# Render diagram
+use_case_path = "/mnt/data/UseCaseDiagram_Pengaduan"
+use_case.render(use_case_path, cleanup=True)
+
+use_case_path + ".png"

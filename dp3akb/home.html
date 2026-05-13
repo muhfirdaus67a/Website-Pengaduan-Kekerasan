@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to BacaInAja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+                
+
+<script>
+    function redirect() {
+      // Ganti URL dengan URL tujuan 
+      window.location.href = "login.php";
+    }
+</script>
+
+<style>
+    @import url('https://fonts.cdnfonts.com/css/gagalin');    
+    
+    .nyoba{
+      cursor: pointer;
+      background-image: url(background.png);
+      background-size: cover;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4em;
+      text-shadow: 2px 2px 4px black;
+      animation: rainbow-text 5s infinite;
+      font-family: 'Gagalin', sans-serif;
+      margin-top: 2em;
+      margin-bottom: -0.9em;
+    }
+    img {
+      height: 1em;
+      width: 1em;
+      margin-right: -0.3em;
+    }
+    @keyframes rainbow-text {
+      0% {
+        color: #e1b595;
+      }
+      14% {
+        color: #cda27e;
+      }
+      25% {
+        color: #b88f68;
+      }
+      36%{
+        color: #a67c52;
+      }
+      43% {
+        color: #733d2a;
+      }
+      57% {
+        color: #4d2314;
+      }
+      68% {
+        color: #733d2a;
+      }
+      79% {
+        color: #a67c52;
+      }
+      85% {
+        color: #b88f68;
+      }
+      100% {
+        color: #cda27e;
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin-left: 60px;
+      margin-right: 60px;
+      font-family: 'Contrail One', cursive;
+      font-style: italic;
+      font-size: 13px;
+      font-weight: bold;
+      color:#cda27e;
+    }
+    .container > * {
+      margin: 35px; 
+    }
+    span.tengah {/* Menurunkan tulisan */
+      margin-top: 150px;
+    }
+      footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      padding: 10px 0;
+    }
+    /* untuk menambahkan garis pada sebelah kiri dan bawah(nonaktif)
+    .vertical-line {
+      border-bottom: double;
+      border-left: double;    
+    }*/
+</style>
+
+</head>
+<body onclick="redirect()" class="nyoba">
+  <p><img src="animasi1.png">Welcome to BacaInAja</p>
+  <div class="container">
+    <span class="vertical-line">Selamat datang di BacaInAja situs baca buku online, tempat di mana Anda dapat memasuki dunia yang penuh dengan petualangan dan pengetahuan. Di sini, buku-buku terbaik dari berbagai genre menanti untuk Anda jelajahi dan menemukan beragam jenis buku, termasuk fiksi, non-fiksi, novel, ensiklopedia, biografi, buku anak-anak, dan masih banyak lagi.</span>
+    <span class="tengah vertical-line">Website baca buku online adalah sebuah platform yang memungkinkan pengguna untuk membaca buku secara digital melalui internet. Website ini menyediakan berbagai koleksi buku dalam berbagai genre dan topik yang dapat diakses kapan saja dan di mana saja dengan menggunakan perangkat komputer, tablet, atau smartphone yang terhubung ke internet.</span>
+    <span class="vertical-line">Jadikan kami teman setia Anda dalam perjalanan literasi. Dengan akses mudah ke berbagai buku, kami memastikan bahwa kehausan Anda akan kisah-kisah baru selalu terpenuhi. Buka pintu menuju dunia pengetahuan dan khayalan melalui layanan baca buku online kami. Bersama-sama, mari kita menjelajahi karya-karya besar penulis terkenal dan menemukan permata yang tersembunyi di antara halaman-halaman buku.</span>
+  </div>
+  <footer>&copy; Copyright-FarendikaRezzi-2023</footer>
+</body>
+</html>
