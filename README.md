@@ -64,7 +64,7 @@ Sistem ini hadir dengan **dua peran utama**:
     </td>
     <td width="50%">
 
-**👤 Panel Masyarakat**
+**👤 Panel User**
 - 🏠 Dashboard informasi publik
 - 📝 Form pengaduan online
 - 🔍 Cek status pengaduan secara real-time
