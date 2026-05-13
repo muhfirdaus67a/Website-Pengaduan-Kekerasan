@@ -181,7 +181,6 @@ Sistem ini hadir dengan **dua peran utama**:
 git clone https://github.com/username/pengaduan-kekerasan-jember.git
 
 # 2. Pindahkan folder ke htdocs (XAMPP) atau www (Laragon)
-# Contoh XAMPP:
 cp -r pengaduan-kekerasan-jember/ C:/xampp/htdocs/
 ```
 
@@ -189,7 +188,7 @@ cp -r pengaduan-kekerasan-jember/ C:/xampp/htdocs/
 
 ```bash
 # 3. Buka phpMyAdmin di http://localhost/phpmyadmin
-# 4. Buat database baru bernama: pengaduan_jember
+# 4. Buat database baru bernama: pkl
 # 5. Import file SQL dari folder database/
 ```
 
@@ -200,7 +199,7 @@ cp -r pengaduan-kekerasan-jember/ C:/xampp/htdocs/
 $host     = "localhost";
 $user     = "root";
 $password = "";
-$database = "pengaduan_jember";
+$database = "pkl";
 ```
 
 ```bash
