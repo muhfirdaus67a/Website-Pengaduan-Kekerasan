@@ -16,9 +16,6 @@
 
 <br/>
 
-[![Demo](https://img.shields.io/badge/🌐_Live_Demo-1b4332?style=for-the-badge)](#)
-[![Laporan Bug](https://img.shields.io/badge/🐛_Laporan_Bug-0d1b2a?style=for-the-badge)](#)
-[![Request Fitur](https://img.shields.io/badge/✨_Request_Fitur-2d6a4f?style=for-the-badge)](#)
 
 </div>
 
