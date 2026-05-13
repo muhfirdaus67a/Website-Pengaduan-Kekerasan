@@ -258,31 +258,9 @@ pengaduan-kekerasan-jember/
 │   ├── js/
 │   └── img/
 ├── database/
-│   └── pengaduan_jember.sql
+│   └── pkl.sql
 └── index.php
 ```
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi sangat terbuka! Silakan ikuti langkah berikut:
-
-1. **Fork** repositori ini
-2. Buat **branch** baru (`git checkout -b fitur/nama-fitur`)
-3. **Commit** perubahan (`git commit -m 'Menambahkan fitur X'`)
-4. **Push** ke branch (`git push origin fitur/nama-fitur`)
-5. Buat **Pull Request**
-
----
-
-## 📄 Lisensi
-
-Proyek ini menggunakan lisensi [MIT](LICENSE) — bebas digunakan dan dimodifikasi dengan atribusi.
-
----
-
-<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d6a4f,50:1b4332,100:0d1b2a&height=130&section=footer" />
 
